@@ -1,0 +1,28 @@
+.food-slider__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-slider__item {
+  min-height: 490px;
+  width: 650px;
+
+  &:first-child {
+    background-image: url("../img/dessert.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(2) {
+    width: 567px;
+    height: 861px;
+    background-image: url("../img/smoothy.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &:last-child {
+    background-image: url("../img/breakfast.jpg");
+  }
+}

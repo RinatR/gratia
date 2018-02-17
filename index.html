@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Index</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i|Montserrat:700" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
     <div class="main-header__menu">
       <div class="main-header__logo">
-        <img src="#" alt="Logo">
-        <a href="#">Gratia</a>
+        <img class="main-header__logo-image" src="img/header-logo.png" alt="Logo">
+        <a class="main-header__logo-text" href="#">Gratia</a>
       </div>
       <nav class="main-header__nav">
         <a href="#" class="main-header__nav-item">About</a>
@@ -19,7 +20,20 @@
         <a href="#" class="main-header__nav-item">Contact</a>
       </nav>
     </div>
-    <div class="main-header__slider"></div>
+    <div class="main-header__slider">
+      <div class="main-header__slider-items">
+        <div class="main-header__slider-item"></div>
+      </div>
+      <div class="main-header__slider-toggles">
+        <div class="main-header__slider-toggle main-header__slider-toggle--left"></div>
+        <div class="main-header__slider-toggle main-header__slider-toggle--right"></div>
+      </div>
+      <div class="main-header__slider-counter">
+        <div class="main-header__slider-number">1</div>
+        <div class="main-header__slider-number main-header__slider-number--active">2</div>
+        <div class="main-header__slider-number">3</div>
+      </div>
+    </div>
   </header>
   <main class="main-content">
     <section class="main-content__section main-content__section--perfection">
@@ -51,9 +65,9 @@
       </div>
     </section>
     <section class="main-content__section main-content__section--features">
-      <h1 class="main-content__section-header">Details</h1>
+      <h1 class="main-content__section-header">How we reach this?</h1>
       <p class="main-content__section-subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <div class="food-slider">
+      <div class="features-slider">
         <div class="features-slider__items">
           <div class="features-slider__item">
             <div class="features-slider__item-title">Different locations</div>
