@@ -6,8 +6,13 @@
 }
 
 .food-slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 490px;
   width: 650px;
+  box-sizing: border-box;
 
   &:first-child {
     background-image: url("../img/dessert.jpg");
@@ -16,13 +21,69 @@
 
   &:nth-child(2) {
     width: 567px;
-    height: 861px;
+    min-height: 861px;
+    padding-top: 400px;
     background-image: url("../img/smoothy.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    .food-slider__item-title {
+      color: #151b29;
+
+      &:after {
+        background-color: #ffffff;
+      }
+    }
+
+    .food-slider__item-text {
+      color: #8b909d;
+    }
   }
 
   &:last-child {
     background-image: url("../img/breakfast.jpg");
   }
+}
+
+.food-slider__item-title {
+  position: relative;
+  margin-bottom: 44px;
+  font-size: 48px;
+  line-height: 84.35px;
+  text-transform: uppercase;
+  color: #d89b64;
+  letter-spacing: 1.02px;
+
+  &:after {
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 43px;
+    height: 1px;
+    background-color: #d89b64;
+    content: "";
+  }
+}
+
+.food-slider__item-text {
+  font-family: @font-second;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.food-slider__link {
+  display: block;
+  width: 235px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 84.35px;
+  color: #d89b64;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.58px;
+  border-bottom: 1px solid #d89b64;
 }
