@@ -1,0 +1,40 @@
+.main-footer {
+  text-align: center;
+}
+
+.main-footer__logo {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  padding-top: 28px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 137px;
+  height: 137px;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+
+  &:before, &:after {
+    position: absolute;
+    top: 50%;
+    left: -136px;
+    transform: translateY(-50%);
+    width: auto;
+    height: 1px;
+    background-color: #e7e7e7;
+    content: "";
+  }
+
+  &:after {
+    left: 136px;
+  }
+}
+
+.main-footer__text {
+  display: block;
+  margin-bottom: 95px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #161b29;
+}
