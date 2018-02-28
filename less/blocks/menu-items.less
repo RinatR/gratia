@@ -1,0 +1,124 @@
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f2f2f4;
+}
+
+.menu-items__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 562px;
+  min-height: 694px;
+  padding-top: 471px;
+  margin-bottom: 67px;
+  text-align: center;
+  background-color: #ffffff;
+
+  &:after {
+    position: absolute;
+    bottom: 287px;
+    content: "";
+  }
+
+  &:first-child {
+
+    &:after {
+      left: 0;
+      width: 562px;
+      height: 407px;
+      background-image: url("../img/main-dishes.jpg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(2) {
+    &:after {
+      right: 0;
+      width: 676px;
+      height: 451px;
+      background-image: url("../img/soups.jpg");
+      background-position: 100% 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(3) {
+    &:after {
+      left: 0;
+      width: 676px;
+      height: 451px;
+      background-image: url("../img/hamburgers.jpg");
+      background-position: 100% 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(4) {
+    &:after {
+      width: 562px;
+      height: 407px;
+      left: 0;
+      top: 0;
+      background-image: url("../img/desserts.jpg");
+      background-position: 0 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(5) {
+    &:after {
+      width: 562px;
+      height: 407px;
+      left: 0;
+      top: 0;
+      background-image: url("../img/barbecue.jpg");
+      background-position: 0 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:last-child {
+    &:after {
+      width: 562px;
+      height: 407px;
+      left: 0;
+      top: 0;
+      background-image: url("../img/salads.jpg");
+      background-position: 0 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    margin-bottom: 0;
+  }
+}
+
+.menu-items__item-title {
+  font-size: 48px;
+  line-height: 84px;
+  color: #151b29;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: #d89b64;
+  }
+}
+
+.menu-items__item-text {
+  font-size: 24px;
+  line-height: 36px;
+  color: #8b909d;
+  font-family: @font-second;
+}

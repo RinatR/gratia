@@ -3,6 +3,11 @@
   padding: 66px 88px 42px 88px;
   background-color: #151b29;
   box-sizing: border-box;
+
+  &--light {
+    min-height: 150px;
+    background-color: #ffffff;
+  }
 }
 
 .main-header__menu {
@@ -10,6 +15,10 @@
   flex-direction: row;
   align-items: center;
   margin-bottom: 99px;
+
+  &--light {
+    margin-bottom: 0;
+  }
 }
 
 .main-header__logo {
@@ -30,6 +39,14 @@
   font-weight: bold;
   text-decoration: none;
   color: #ffffff;
+
+  &--light {
+    color: #151b28;
+
+    &:hover {
+      color: #d89b64;
+    }
+  }
 }
 
 .main-header__nav {
@@ -49,6 +66,14 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &--light {
+    color: #151b28;
+
+    &:hover {
+      color: #d89b64;
+    }
   }
 }
 
